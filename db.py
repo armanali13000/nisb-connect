@@ -3,8 +3,8 @@
 import psycopg2
 
 from flask_bcrypt import generate_password_hash, check_password_hash
-def connectDB(host='localhost',database='codejam',user='root',password='1234'):
-    return psycopg2.connect(database="codejam", user = "mridul", password = "1234", host = "127.0.0.1", port = "5432")
+def connectDB():
+    return psycopg2.connect(host='ec2-54-83-22-244.compute-1.amazonaws.com',database='d282hbobc6tbfj',user='qheutigaqfjzva',password='72df4a54602440814de2551692ce7db5bf2cb9d29e075502f6e3ea9c09ab667d', port = "5432")
     #return mysql.connector.connect(host=host,database=database,user=user,password=password)
 
 def disconnectDB(conn):
