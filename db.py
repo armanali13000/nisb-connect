@@ -370,7 +370,7 @@ def init_DB():
     executeDB(c,sql,())
     disconnectDB(c)
 
-init_DB()
+# init_DB()
 
 #print members_list()
 
