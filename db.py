@@ -371,7 +371,6 @@ def init_DB():
     disconnectDB(c)
 
 # init_DB()
-
 #print members_list()
 
 # print follower_list('2')
