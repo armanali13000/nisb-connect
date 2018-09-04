@@ -265,10 +265,11 @@ def unlike(post_id):
 
 
 
+app.jinja_env.globals.update(is_liked=is_liked)
+app.jinja_env.globals.update(get_likes=get_likes)
+app.jinja_env.globals.update(is_following=is_following)
 
 if __name__ == '__main__':
     # session["login"] = False
-    app.jinja_env.globals.update(is_liked=is_liked)
-    app.jinja_env.globals.update(get_likes=get_likes)
-    app.jinja_env.globals.update(is_following=is_following)
+
     app.run(host='0.0.0.0', port=8000, debug=True)
